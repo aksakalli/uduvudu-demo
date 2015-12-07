@@ -1,0 +1,762 @@
+# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
+
+@base <http://eis.iai.uni-bonn.de/> .
+@prefix sysont: <http://ns.ontowiki.net/SysOnt/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix site: <http://ns.ontowiki.net/SysOnt/Site/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix v: <http://www.w3.org/2006/vcard/ns#> .
+@prefix content: <http://purl.org/rss/1.0/modules/content/> .
+@prefix lod2: <http://lod2.eu/schema/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix sioct: <http://rdfs.org/sioc/types#> .
+@prefix aiiso: <http://purl.org/vocab/aiiso/schema#> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix label: <http://purl.org/net/vocab/2004/03/label#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix umbel: <http://umbel.org/umbel#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix ns14: <https://twitter.com/Daniel_hladky#> .
+@prefix ns4: <http://vocab.ox.ac.uk/projectfunding#> .
+@prefix ns0: <http://139.18.2.164:8080/> .
+@prefix ns1: <http://cstadler.aksw.org/> .
+@prefix ns2: <http://139.18.2.164:4444/demo/> .
+@prefix ns3: <http://nlp2rdf.lod2.eu/> .
+@prefix ns7: <https://twitter.com/alex_siebert#> .
+@prefix ns8: <http://hans.uszkoreit.net/#> .
+@prefix ns9: <http://www.nittka.de/index_e.html#> .
+@prefix ns10: <http://de.linkedin.com/pub/andreas-both/22/672/942#> .
+@prefix ns11: <http://www.mi.fu-berlin.de/inf/groups/ag-csw/Members/almashraee.html#> .
+@prefix ns12: <http://www.hpi.uni-potsdam.de/meinel/lehrstuhl/team_fotos/current_phd_students/christian_hentschel.html#> .
+@prefix ns13: <http://www.xing.com/profile/Mario_Lenz#> .
+@prefix ns5: <http://eis.iai.uni-bonn.de/SchemaEvent/> .
+@prefix ns15: <http://eis.iai.uni-bonn.de/Events/2013/LeipzigerSemanticWebTag/Presenter/> .
+@prefix projects: <http://eis.iai.uni-bonn.de/Projects/> .
+@prefix ns6: <http://eis.iai.uni-bonn.de/Events/2013/> .
+@prefix lswt2013: <http://eis.iai.uni-bonn.de/Events/2013/LeipzigerSemanticWebTag/> .
+@prefix groups: <http://eis.iai.uni-bonn.de/Groups/> .
+@prefix people: <http://eis.iai.uni-bonn.de/> .
+@prefix ns16: <http://eis.iai.uni-bonn.de/Partner/> .
+@prefix ns17: <http://cstadler.eis.iai.uni-bonn.de/> .
+@prefix eis: <http://eis.iai.uni-bonn.de/schema/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix address: <http://eis.iai.uni-bonn.de/Address/> .
+@prefix ns18: <http://eis.iai.uni-bonn.de/schema_Event/> .
+@prefix ns19: <http://eis.iai.uni-bonn.de/Project_Partner/> .
+@prefix ns20: <http://aksw.org/schema/> .
+@prefix ns21: <http://eis.uni-bonn.de/Person/> .
+@prefix ns22: <http://eis.uni-bonn.de/> .
+@prefix aair: <http://xmlns.notu.be/aair#> .
+@prefix ns23: <http://www.iais.fraunhofer.de/#> .
+@prefix ns24: <http://eis.iai.uni-bonn.de/Demo/> .
+@prefix ns25: <http://> .
+@prefix ns26: <http://butterbur04.iai.uni-bonn.de/ontowiki/diachron/> .
+@prefix ns27: <https://github.com/AKSW/semann/> .
+@prefix ns28: <http://eis.iai.uni-bonn.de/foaf_Person/> .
+@prefix ns29: <http://eis.iai.uni-bonn.de/view/r/> .
+@prefix ns30: <http://52.26.72.112:3000/query/> .
+@prefix ns31: <https://github.com/EIS-Bonn/> .
+@prefix ns32: <http://eis.iai.uni-bonn.de/Event/> .
+
+people:ChristophLange a foaf:Person ;
+                      rdfs:label "Dr. Christoph Lange" ;
+                      rdfs:seeAlso <http://langec.wordpress.com/about> ;
+                      owl:sameAs <http://purl.org/net/clange> ;
+                      skos:prefLabel "Dr. Christoph Lange" ;
+                      foaf:name "Christoph Lange" ;
+                      foaf:homepage <http://langec.wordpress.com/about> ;
+                      site:templateOption "minimal" ;
+                      skos:hiddenLabel "Christoph Lange-Bever" ;
+                      foaf:currentProject projects:OSCOSS, projects:OpenCourseWare_observatory, projects:WDAqua_ITN, projects:Diachron, projects:VoCol ;
+                      foaf:depiction <http://www.iai.uni-bonn.de/~langec/photo.jpg> ;
+                      foaf:mbox <mailto:math.semantic.web@gmail.com> ;
+                      foaf:phone <tel:+492241142428> ;
+                      foaf:familyName "Lange" ;
+                      eis:publicationTag "lange" ;
+                      eis:room "A209" .
+
+people:Najmeh a foaf:Person ;
+              foaf:name "Najmeh Mousavi" ;
+              foaf:homepage "https://de.linkedin.com/pub/najmeh-mousavi/36/9a6/3b" ;
+              foaf:depiction <http://eis.iai.uni-bonn.de/upload/thumbnails/najmen.jpg> ;
+              foaf:mbox <mailto:nejad@iai.uni-bonn.de> ;
+              eis:room "A118" ;
+              site:content """I carried out my bachelor education in one of the best technical universities of Iran, Amirkabir University of Technology.  In my bachelors, I put majority of my efforts in the theoretical computer science and programming-related courses, in which I was always interested. During my undergraduate studies, participating in different research programs has improved my abilities in working in large groups of researchers and developers on a big project.
+
+Another source where I learned a lot was my working experiences; it gave me a good idea of how academic work can help the industrial products or applications.
+
+I carried out my M.Sc. at Islamic Azad university - Science & Research Branch in Artificial Intelligence which is a program of Computer Engineering department. During my master studies I focused on speech and natural language processing related courses and researches. I took all of my elective courses in these fields and did a number of researches.
+
+The largest practical project was my M.Sc. thesis titled “Transliteration of English-Persian Names and Vice Versa Based on Statistical Methods”, for which we proposed new algorithm for aligning name pairs. I succeeded to publish two international papers and one paper in national conference based on master thesis."""^^sysont:Markdown .
+
+people:Fathoni_Musyaffa a foaf:Person ;
+                        rdfs:label "Fathoni Musyaffa" ;
+                        foaf:name "Fathoni Musyaffa" ;
+                        foaf:homepage <https://id.linkedin.com/in/fathoni> ;
+                        skos:hiddenLabel "Fathoni Musyaffa" ;
+                        foaf:currentProject <http://eis.iai.uni-bonn.de/Projects/OpenBudgets.eu> ;
+                        foaf:depiction <https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/000/117/1c5/34d913c.jpg> ;
+                        foaf:mbox <mailto:musyaffa@iai.uni-bonn.de> ;
+                        foaf:familyName "Musyaffa" ;
+                        eis:room "A119" .
+
+people:Saleh_Alkarabubi a foaf:Person ;
+                        rdfs:label "Saleh Alkarabubi" ;
+                        skos:prefLabel "Saleh Alkarabubi" ;
+                        foaf:name "Saleh" ;
+                        foaf:depiction <https://lh5.googleusercontent.com/-jrdiHjbnGHw/VRwaaonGakI/AAAAAAAAMac/MjrAbVM7N88/s76-c-ODR8CYs7TZuQ/S.O.A.jpg> ;
+                        foaf:mbox <mailto:s6saalka@uni-bonn.de> ;
+                        foaf:familyName "Alkarabubi" ;
+                        eis:room "A110a" .
+
+people:Kuldeep_Singh a foaf:Person ;
+                     rdfs:label "Kuldeep Singh" ;
+                     skos:prefLabel "Kuldeep Singh" ;
+                     foaf:name "Kuldeep Singh" ;
+                     skos:hiddenLabel "Kuldeep Singh" ;
+                     foaf:currentProject projects:WDAqua_ITN ;
+                     foaf:depiction <https://media.licdn.com/media/AAEAAQAAAAAAAAJgAAAAJGI4Y2I2NGE2LTRjNDMtNGRiYS1hYmE3LTQ3ZTFjNjg3ZmE4Yw.jpg> ;
+                     eis:publicationTag "singh" .
+
+people:JudieAttard a foaf:Person ;
+                   skos:prefLabel "Judie Attard" ;
+                   foaf:name "Judie Attard" ;
+                   site:templateOption "minimal" ;
+                   foaf:currentProject projects:Linda ;
+                   foaf:depiction <https://media.licdn.com/media/p/7/000/271/093/2b701cc.jpg> ;
+                   foaf:mbox <mailto:attard@informatik.uni-bonn.de>, <mailto:judie.attard@iais-extern.fraunhofer.de> ;
+                   foaf:familyName "Attard" ;
+                   eis:publicationTag "attard" ;
+                   eis:room "A110a" .
+
+people:Kemele_M_Endris a foaf:Person ;
+                       rdfs:label "Kemele M. Endris" ;
+                       owl:sameAs <https://www.linkedin.com/in/keme686>, <https://twitter.com/KemeleM> ;
+                       skos:prefLabel "Kemele M. Endris" ;
+                       foaf:name "Kemele" ;
+                       site:templateOption "minimal" ;
+                       skos:hiddenLabel "Kemele Muhammed Endris" ;
+                       foaf:currentProject projects:Linda, projects:iRap, projects:WDAqua_ITN ;
+                       foaf:depiction <https://lh3.googleusercontent.com/-uTRBYDJh5A0/T7EAgQDbK_I/AAAAAAAAAG8/Lyv0h7ItozM/s577-no/j.jpg> ;
+                       foaf:mbox <mailto:endris@cs.uni-bonn.de> ;
+                       foaf:phone <tel:+4915144928948> ;
+                       foaf:familyName "Endris" ;
+                       eis:publicationTag "endris" ;
+                       eis:room "A119" ;
+                       site:content """# Publications:
+## 2015
+1. \"Interest-based RDF Update Propagation\", Kemele M. Endris, Sidra Faisal, Fabrizio Orlandi, Soren Auer, Simon Scerri, ISWC 2015
+1. \"iRap -- An Interest-based RDF Update Propagation Framework (poster)\",  Kemele M. Endris, Sidra Faisal, Fabrizio Orlandi, Soren Auer, Simon Scerri, ISWC2015- Poster session
+
+## 2014
+1. \"SPARQL Query Result Explanation for Linked Data\", Rakebul Hasan, Kemele M Endris, Fabien Gandon, SWCS2014"""^^sysont:Markdown ;
+                       <schema:location> "University of Bonn, Computer Science/EIS,  Römerstr. 164, 53117 Bonn, Germany" ;
+                       <site:content> "Publications:" .
+
+people:Lavdim a foaf:Person ;
+              rdfs:label "Lavdim Halilaj" ;
+              dcterms:description """Research and Technology Interests:
+
+- Ontology Engineering,
+- Linked Open Data,
+- Semantic Web and Technologies,
+- Software Engineering and Agile Methodologies. In particular modern UI
+
+
+Me Elsewhere
+
+[ResearchGate](http://www.researchgate.net/profile/Lavdim_Halilaj \"ResearchGate\")
+[LinkedIn](https://www.linkedin.com/pub/lavdim-halilaj/22/b15/843 \"LinkedIn\")
+
+"""^^sysont:Markdown ;
+              foaf:currentProject projects:LUCID, projects:VoCol ;
+              foaf:depiction <https://lh4.googleusercontent.com/-CpFaKPUN2IA/VO2RcI4RB8I/AAAAAAAAAH4/rI4CFDmB5Oc/w1011-h1015-no/IMG_20141111_130535.jpg> ;
+              foaf:mbox <mailto:halilaj@iai.uni-bonn.de> ;
+              foaf:familyName "Halilaj" ;
+              eis:room "A119" ;
+              <dct:description> """Research and Technology Interests:
+
+- Ontology Engineering,
+- Linked Open Data,
+- Semantic Web and Technologies,
+- Software Engineering and Agile Methodologies. In particular modern UI
+
+
+Me Elsewhere
+==================
+<ul>
+<li>Social Networks: <a href=\"http://www.researchgate.net/profile/Lavdim_Halilaj\">ResearchGate</a>, <a href='https://www.linkedin.com/pub/lavdim-halilaj/22/b15/843' rel='nofollow'>LinkedIn</a>
+</li>
+</ul>""" .
+
+people:Mohamed_Nadjib_Mami a foaf:Person ;
+                           rdfs:label "Mohamed Nadjib Mami" ;
+                           foaf:name "Mohamed Nadjib MAMI" ;
+                           dcterms:description """Research and Technology Interests
+============================
+- Heterogeneous Databases
+- (Big) Data Management
+- Semantic Web and Linked Data
+
+
+Current Activities
+=============
+- Building / deploying [Big Data Europe](http://big-data-europe.eu \"Big Data Europe Project\") platform
+- Building / administrating [Big Data Value Association](http://bdva.eu \"Big Data Value Association\") website
+- Writing papers :)
+
+
+Education
+========
+- Doctoral Studies \"Semantic Web & Big Data\": [EIS Bonn University](http://eis.iai.uni-bonn.de/ \"Enterprise Information Systems\") & [IAIS Fraunhofer](http://eis.iai.uni-bonn.de/Mohamed_Nadjib_Mami.html \" Fraunhofer-Insitute for Intelligent Analysis and Information Systems\") - Bonn, Germany (current)
+- Master's Degree \"Intelligent Systems\": Paris Dauphine University - Paris, France
+- Master's Degree \"Software Engineering\": Saad Dahlab University - Blida, Algeria
+- Bachelor's Degree \"Computer Science\": Saad Dahlab University - Blida, Algeria
+
+
+Professional Experience
+===================
+- Intern \"Object-Non-Relational Mapping, Meta-Modeling, NOSQL Databases esp. Graph\": KamricSoft - France
+- Web Developer \"E-commerce websites\": Kadik2i - Algeria and France
+
+
+Honors and Awards
+===============
+- Best Mini-project in SSSW15 Summer School - 2015, Italy (team award)
+- Second Award of \"Forum National des Etudiants en Informatique\" (FNEI) - 2011, Algeria
+
+
+Me Elsewhere
+============
+- Portfolio and blogging: [Strinking](http://mohamed-nadjib-mami.strikingly.com \"Strikingly\") - [Meduim](https://medium.com/@MohamedNadjMAMI \"Medium.com\")
+- Social Networks: [LinkedIn](https:/linkedin.com/in/mohamednadjibmami \"LinkedIn\") - [Twitter](https://twitter.com/MohamedNadjMAMI \"Twitter\") - [Flickr](https://www.flickr.com/photos/mohamed-nadjib-mami/ \"Flickr\")
+- Content repositories: [GitHub](https://github.com/mnmami \"GitHub\")"""^^sysont:Markdown ;
+                           skos:hiddenLabel "MohamedNadjibMami" ;
+                           foaf:currentProject projects:BigDataEurope ;
+                           foaf:depiction <https://fascww.bn1301.livefilestore.com/y2pH-PcQZXW5XDUFfVyvh5izNG7xejz9PkfnLLKaW4ztbUox0x7IQAdxKVi3c3XwitM5GdihgEd0j-uTMN3uaAVTxs707ep_C4ZnGJtcQa2_xyiLZ4-YfpEP4WybkPA7-CZ0kIZKAX0kALzTs7sxw6kuw/Profile3.jpg?psid=1> ;
+                           foaf:mbox <mailto:mami@iai.uni-bonn.de> ;
+                           foaf:phone <tel:+49-1575-84-82-232> ;
+                           foaf:familyName "Mami" ;
+                           eis:room "A119 (Uni Bonn at RömerStr. 164)" ;
+                           <dct:description> "<strong>Study</strong>" ;
+                           <site:content> "test <b>test</b>" .
+
+people:AlanTygel a foaf:Person ;
+                 rdfs:label "AlanTygel" ;
+                 skos:prefLabel "Alan Tygel" ;
+                 foaf:name "Alan Tygel" ;
+                 foaf:homepage <http://cirandas.net/alantygel/site-academico> ;
+                 foaf:currentProject projects:OpenBudgets ;
+                 foaf:depiction <http://cirandas.net/thumbnails/0029/5980/alan_ihu_menor_display.jpg> ;
+                 foaf:mbox <mailto:alantygel@ppgi.ufrj.br> ;
+                 foaf:familyName "Tygel" ;
+                 eis:room "A110a" .
+
+people:Farah_Karim a foaf:Person ;
+                   rdfs:label "Farah Karim" ;
+                   foaf:name "Farah Karim" ;
+                   skos:hiddenLabel "Farah Karim" ;
+                   foaf:currentProject projects:OpenAIRE2020 ;
+                   foaf:mbox <mailto:10msitfkarim@seecs.edu.pk> ;
+                   foaf:phone <tel:+4915218815243> ;
+                   foaf:familyName "Karim" ;
+                   eis:room "A110a" .
+
+people:Diego_Collarana a foaf:Person ;
+                       rdfs:label "Diego Collarana" ;
+                       skos:prefLabel "Diego Collarana" ;
+                       foaf:name "Diego Collarana" ;
+                       foaf:homepage <https://www.linkedin.com/pub/diego-collarana/27/b61/60a> ;
+                       skos:hiddenLabel "Diego Collarana" ;
+                       foaf:currentProject projects:LiDaKrA ;
+                       foaf:depiction <https://media.licdn.com/media/p/4/000/13e/336/35bb4dc.jpg> ;
+                       foaf:mbox <mailto:collaran@iai.uni-bonn.de> .
+
+people:DaryaTarasowa a foaf:Person ;
+                     skos:prefLabel "Darya Tarasowa" ;
+                     foaf:name "Darya Tarasowa" ;
+                     site:templateOption "minimal" ;
+                     foaf:currentProject projects:SlideWiki, projects:EDSA ;
+                     foaf:depiction <https://lh4.googleusercontent.com/-l59kLILg-uA/T1HrKlFxiwI/AAAAAAAABzM/2evmF9t8Hk8/w789-h787-no/IMG_6159.JPG> ;
+                     foaf:mbox <mailto:darya.tarasowa@gmail.com> ;
+                     foaf:familyName "Tarasowa" ;
+                     eis:publicationTag "tarasowa" ;
+                     eis:room "A110a" .
+
+people:SarvenCapadisli a foaf:Person ;
+                       rdfs:seeAlso <http://csarven.ca/cv> ;
+                       owl:sameAs <http://csarven.ca/#i> ;
+                       foaf:name "Sarven Capadisli" ;
+                       foaf:homepage <http://csarven.ca/> ;
+                       sioc:feed <http://csarven.ca/atom> ;
+                       foaf:depiction <http://csarven.ca/media/images/sarven-capadisli.jpg> ;
+                       foaf:mbox <mailto:info@csarven.ca> ;
+                       foaf:familyName "Capadisli" .
+
+people:SoerenAuer a foaf:Person ;
+                  skos:prefLabel "Prof. Dr. Sören Auer" ;
+                  foaf:name "Sören Auer" ;
+                  dcterms:description """Sören heads the Enterprise Information Systems group at the computer science department at University of Bonn. He is also member of the leadership council of <a href=\"http://www.iais.fraunhofer.de\">Fraunhofer-Insitute for Intelligent Analysis and Information Systems (IAIS)</a> and scientific head of the Fraunhofer IAIS department <a href=\"http://www.iais.fraunhofer.de/ok.html\">Organized Knowledge</a>. Before joining University of Bonn and Fraunhofer IAIS in 2013, Sören founded <a href=\"http://aksw.org\">AKSW research group</a> at University of Leipzig and worked at TU Chemnitz as well as University of Pennsylvania.
+
+<div class=\"demowheel\"><ul>
+<li class=\"odd\">
+<h2 class=\"demowheel-title\"><a href='http://videolectures.net/dataforum2014_panel_big_data/'>Executive Panel on Big Data at European Data Forum</a></h2>
+<a class=\"demowheel-image\" href='http://videolectures.net/dataforum2014_panel_big_data/'>  <img src='http://videolectures.net/dataforum2014_panel_big_data/thumb.jpg' border=0/>
+  </a>
+</li>
+    <li class=\"even\">
+        <h2 class=\"demowheel-title\"><a href='http://www.forumspb.com/en/2013/sections/19/materials/190/sessions/398'>Panel on Open Data at Sankt Petersburg Economic Forum</a> <span class=\"hookline\"></span></h2>
+<a class=\"demowheel-image\" href='http://www.forumspb.com/en/2013/sections/19/materials/190/sessions/398'><img alt=\"screenshot\" src=\"http://eis.iai.uni-bonn.de/upload/soeren-spb-forum.jpg\" /></a></li>
+
+    <li class=\"odd\">
+        <h2 class=\"demowheel-title\"><a href='http://videolectures.net/estc2010_auer_lod/'>Talk at European Semantic Technology Conference</a> <span class=\"hookline\"></span></h2>
+<a class=\"demowheel-image\" href='http://videolectures.net/estc2010_auer_lod/'><img alt=\"screenshot\" src=\"http://videolectures.net/estc2010_auer_lod/thumb.jpg\" /></a></li>
+    <li class=\"even\">
+        <h2 class=\"demowheel-title\"><a href='http://www.forumspb.com/en/2013/sections/19/materials/190/sessions/398'>Transparency through Open Data at SPB International Economic Forum</a> <span class=\"hookline\"></span></h2>
+<a class=\"demowheel-image\" href='http://www.forumspb.com/en/2013/sections/19/materials/190/sessions/398'><img alt=\"screenshot\" src=\"http://eis.iai.uni-bonn.de/upload/soeren-spb-forum1.jpg\" /></a></li>
+    <li class=\"odd\">
+        <h2 class=\"demowheel-title\"><a href='http://www.deutschlandfunk.de/big-data-daten-die-nur-gutes-tun-sollen.684.de.html?dram:article_id=312291'>Interview about societal perspectives of Big Data Technologies</a> <span class=\"hookline\"></span></h2>
+<a class=\"demowheel-image\" href='http://www.deutschlandfunk.de/big-data-daten-die-nur-gutes-tun-sollen.684.de.html?dram:article_id=312291'><img alt=\"screenshot\" src=\"http://www.deutschlandfunk.de/media/files/6/698f8a2936502bb5591da9964990ad6dv1.jpg\" /></a></li>
+    <li class=\"even\">
+        <h2 class=\"demowheel-title\"><a href='https://www.youtube.com/watch?v=WYsvXrx1Ilg'>Linked Enterprise Data talk at WSU</a> <span class=\"hookline\"></span></h2>
+<a class=\"demowheel-image\" href='https://www.youtube.com/watch?v=WYsvXrx1Ilg'><img alt=\"screenshot\" src=\"https://i.ytimg.com/vi/WYsvXrx1Ilg/mqdefault.jpg\" /></a></li>
+    <li class=\"odd\"><h2 class=\"demowheel-title\"><a href='https://www.youtube.com/watch?v=e0Z11w_Kb4c'>KESW keynote \"The Emerging Web of Data\"</a> <span class=\"hookline\"></span></h2>
+<a class=\"demowheel-image\" href='https://www.youtube.com/watch?v=e0Z11w_Kb4c'><img alt=\"screenshot\" src=\"https://i.ytimg.com/vi/e0Z11w_Kb4c/mqdefault.jpg\" /></a></li>
+
+    <li class=\"even\"><h2 class=\"demowheel-title\"><a href='https://www.youtube.com/watch?v=r6cPQGij5Wo'>Webinar on OpenCourseWare authoring with SlideWiki</a> <span class=\"hookline\"></span></h2>
+<a class=\"demowheel-image\" href='https://www.youtube.com/watch?v=r6cPQGij5Wo'><img alt=\"screenshot\" src=\"https://i.ytimg.com/vi/r6cPQGij5Wo/mqdefault.jpg\" /></a></li>
+
+    <li class=\"odd\"><h2 class=\"demowheel-title\"><a href='http://videolectures.net/wims2011_auer_interlinked/'>Keynote on Linked Data at Conference on Web Intelligence, Mining and Semantics (WIMS)</a> <span class=\"hookline\"></span></h2>
+<a class=\"demowheel-image\" href='http://videolectures.net/wims2011_auer_interlinked/'><img alt=\"screenshot\" src=\"http://videolectures.net/wims2011_auer_interlinked/thumb.jpg\" /></a></li>
+
+    <li class=\"even\"><h2 class=\"demowheel-title\"><a href='https://vimeo.com/76257120'>TPDL Keynote What can Linked Data do for Digital Libraries?</a> <span class=\"hookline\"></span></h2>
+<a class=\"demowheel-image\" href='https://vimeo.com/76257120'><img alt=\"screenshot\" src=\"https://i.vimeocdn.com/video/451010164_590x332.webp\" /></a></li>
+
+    <li class=\"odd\"><h2 class=\"demowheel-title\"><a href='https://vimeo.com/41772587'>Semantic Data Web at Publishers' Forum</a> <span class=\"hookline\"></span></h2>
+<a class=\"demowheel-image\" href='https://vimeo.com/41772587'><img alt=\"screenshot\" src=\"https://i.vimeocdn.com/video/289506059_590x332.webp\" /></a></li>
+
+    <li class=\"even\"><h2 class=\"demowheel-title\"><a href='http://ercim-news.ercim.eu/en96'>ERCIM News 96 Linked Open Data</a> <span class=\"hookline\"></span></h2>
+<a class=\"demowheel-image\" href='http://ercim-news.ercim.eu/en96'><img alt=\"screenshot\" src=\"http://ercim-news.ercim.eu/images/stories/EN96/cover.jpg\" /></a></li>
+
+    <li class=\"odd\"><h2 class=\"demowheel-title\"><a href='http://www.springer.com/us/book/9783642302732'>Springer Book Linked Enterprise Data</a> <span class=\"hookline\"></span></h2>
+<a class=\"demowheel-image\" href='http://www.springer.com/us/book/9783642302732'><img alt=\"screenshot\" src=\"https://images.springer.com/sgw/books/medium/9783642302732.jpg\" /></a></li>
+
+    <li class=\"even\"><h2 class=\"demowheel-title\"><a href='http://www.springer.com/us/book/9783319098456'>Springer Book Linked Open Data</a> <span class=\"hookline\"></span></h2>
+<a class=\"demowheel-image\" href='http://www.springer.com/us/book/9783319098456'><img alt=\"screenshot\" src=\"https://images.springer.com/sgw/books/medium/9783319098456.jpg\" /></a></li>
+
+</ul>
+</div>
+
+Research and Technology Interests
+==================
+
+- Semantic Web technologies and Linked Data
+- Knowledge Representation and Management, in particular agile, light-weight methodologies and social semantic collaboration
+- Software engineering, open-source software and adaptive methodologies and tools
+- Database and XML technologies
+- Open, participatory research and development (see my Open Science slides and OpenResearch.org)
+- Application domains: enterprise data integration, cyber-physical systems, smart cities, digital humanities
+
+
+Current Activities
+==================
+<ul>
+<li>Member of the leadership council of <a href=\"http://www.iais.fraunhofer.de\">Fraunhofer-Insitute for Intelligent Analysis and Information Systems (IAIS)</a> and scientific head of the Fraunhofer IAIS department <a href=\"http://www.iais.fraunhofer.de/ok.html\">Organized Knowledge</a></li>
+<li>Coordinator of <a href=\"http://www.big-data-europe.eu\">H2020 BigDataEurope - Empowering Communities with Big Data Technologies</a></li>
+<li>Co-chair of the steering committee of the <a href=\"http://data-forum.eu\">European Data Forum</a></li>
+<li>Founding member (representative of Fraunhofer society) of the board of directors of <a href=\"http://bdva.eu/\">Big Data Value Association</a></li>
+<li>Founder (resp. co-founder) and collaborator of a number of high-impact research and community projects, e.g.: <a href='http://slidewiki.aksw.org'>SlideWiki</a> (crowd-sourcing of educational content creation), <a href='http://DBpedia.org'>DBpedia.org</a> (transforming Wikipedia into a knowledge base), <a href='http://linkedgeodata.org'>LinkedGeoData.org</a> (spatial semantic data repository).</li>
+<li><a href='http://okfn.org'>Open Knowledge Foundation</a> - Protecting and Promoting Open Knowledge in a Digital Age (advisory board member)</li>
+<li>Member of the <a href=\"http://www.w3.org/2013/12/dacg-charter.html\">W3C Data Activity Coordination Group (DACG)</a></li>
+<li>Editor in Chief of <a href='http://www.ijswis.org'>Journal of Semantic Web and Information Systems</a>, editorial board member of various journals (<a href='http://www.semantic-web-journal.net'>Semantic Web Journal</a>, <a href='http://www.rintonpress.com/journals/jwe/'>Journal of Web Engineering</a>)
+</li>
+<li>Scientific advisor to the AKSW/LOD2 spin-off company <a href=\"http://eccenca.com\">eccenca GmbH</a></li>
+</ul>
+
+Former Activities
+==================
+<ul>
+<li>Coordinator of the EU-FP7-ICT IP project <a href='http://lod2.eu'>LOD2 - Creating Knowledge out of Interlinked Data</a></li>
+<li>Founder and head of <a href='http://aksw.org'>AKSW Research group</a> at University of Leipzig</li>
+<li>Principle investigator for the funded research projects <a href='http://ontowiki.eu'>OntoWiki</a> (EU-FP7-SME) and <a href='http://le4sw.de'>LE4SW</a> (BmBF)
+</li><li>Programme committee co-chair of: <a href='http://www2012.wwwconference.org/?page_id=1569'>WWW 2012</a>, <a href='http://icwe2011.webengineering.org'>ICWE 2011</a>, <a href='http://www.eswc2012.org'>ESWC 2012</a>, <a href='http://wiki.okfn.org/okcon/2010/'>OKCon 2010</a>, I-Semantics 2008
+</li><li>Programme committee member of conferences and workshops, e.g.: <a href='http://www.icde12.org'>ICDE2012</a>, <a class='urllink' href='http://www2013.org'>WWW 2013</a>, <a href='http://iswc2012.semanticweb.org/'>ISWC 2012</a>, <a href='http://2013.eswc-conferences.org/'>ESWC 2013</a>, <a href='http://www.ieee-icsc.org/'>IEEE-ICSC 2011</a> (see <a href='http://www.informatik.uni-leipzig.de/~auer/index.php?n=Main.Events'>Events</a>)
+</li><li>Director of academic master studies program “Content- and Media Engineering” at <a href='http://leipzigschoolofmedia.de'>Leipzig School of Media</a>
+</li><li><a href='http://www.w3.org/2001/sw/rdb2rdf/'>W3C's RDB2RDF Working Group</a> (invited expert)
+</li><li><a href='http://cordis.europa.eu/fp7'>EU's 6th and 7th framework programs</a> (evaluator and reviewer)
+</li>
+<li>Supervision of doctoral students: <a href='http://bis.informatik.uni-leipzig.de/SebastianTramp'>Sebastian Tramp</a>, <a href='http://bis.informatik.uni-leipzig.de/SebastianHellmann'>Sebastian Hellmann</a>, <a href='http://bis.informatik.uni-leipzig.de/MichaelMartin'>Michael Martin</a>, <a href='http://bis.informatik.uni-leipzig.de/JoergUnbehauen'>Jörg Unbehauen</a>, <a href='http://bis.informatik.uni-leipzig.de/PhilippFrischmuth'>Philipp Frischmuth</a>, <a href='http://aksw.org/AliKhalili'>Ali Khalili</a>, <a href='http://bis.informatik.uni-leipzig.de/TimofeyErmilov'>Timofey Ermilov</a>, <a href='http://bis.informatik.uni-leipzig.de/MohamedMorsey'>Mohamed Morsey</a>, <a href='http://bis.informatik.uni-leipzig.de/ClausStadler'>Claus Stadler</a>, <a href='http://bis.informatik.uni-leipzig.de/SaeedehShekarpour'>Saeedeh Shekarpour</a>, <a href='http://bis.informatik.uni-leipzig.de/AmrapaliZaveri'>Amrapali J. Zaveri</a>
+</li><li>Collaboration with: <a href='http://jens-lehmann.org/' rel='nofollow'>Jens Lehmann</a> (AKSW MOLE), <a href='http://bis.uni-leipzig.de/AxelNgonga'>Axel-Cyrille Ngonga Ngomo</a> (AKSW SIMBA)
+</li><li>Invited speaker at: <a href='http://www.lrec-conf.org/lrec2012/'>LREC 2012</a>, <a href='http://www.sbbd-webmedia2011.inf.ufsc.br/sbbd/index.php/en'>SBBD 2011</a>, <a href='http://reasoningweb.org/2011/'>ReWeb 2011</a>, <a href='http://bis.kie.ae.poznan.pl/14th_bis/'>BIS 2011</a>, <a href='http://www.consegi.gov.br/?set_language=en'>CONSEGI 2011</a>, <a href='http://wims.vestforsk.no/'>WIMS 2011</a>, <a href='http://iswsa.ipu.edu.jo/'>ISWSA 2011</a>, <a href='http://www.eswc2010.org'>ESWC 2010</a>
+</li></ul><div class='vspace'></div>
+
+Publications
+==================
+
+<div class=\"demowheel\"><ul>
+    <li class=\"odd\"><h2 class=\"demowheel-title\"><a href='http://ercim-news.ercim.eu/en96'>ERCIM News 96 Linked Open Data</a> <span class=\"hookline\"></span></h2>
+<a class=\"demowheel-image\" href='http://ercim-news.ercim.eu/en96'><img alt=\"screenshot\" src=\"http://ercim-news.ercim.eu/images/stories/EN96/cover.jpg\" /></a></li>
+
+    <li class=\"even\"><h2 class=\"demowheel-title\"><a href='http://www.springer.com/us/book/9783642302732'>Springer Book Linked Enterprise Data</a> <span class=\"hookline\"></span></h2>
+<a class=\"demowheel-image\" href='http://www.springer.com/us/book/9783642302732'><img alt=\"screenshot\" src=\"https://images.springer.com/sgw/books/medium/9783642302732.jpg\" /></a></li>
+
+    <li class=\"odd\"><h2 class=\"demowheel-title\"><a href='http://www.springer.com/us/book/9783319098456'>Springer Book Linked Open Data</a> <span class=\"hookline\"></span></h2>
+<a class=\"demowheel-image\" href='http://www.springer.com/us/book/9783319098456'><img alt=\"screenshot\" src=\"https://images.springer.com/sgw/books/medium/9783319098456.jpg\" /></a></li>
+
+</ul>
+</div>
+
+
+Please check out the <a href=\"http://eis.iai.uni-bonn.de/Publications\">publications section</a> as well as my <a href='http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/a/Auer:S=ouml=ren.html'>DBLP</a> and <a href='http://scholar.google.com/citations?user=2cpal78AAAAJ'>Google Scholar</a> profiles.
+
+Secretary
+==================
+If you need me to sign something, for directions, visiting arrangements etc. please contact:
+<table><tr>
+<td>At **University of Bonn**:<br />
+<a href=\"http://wob.iai.uni-bonn.de/Wob/en/view/class217_id221.html\">Martina Doelp</a><br />
+Phone: +49 (228) 73-4501 <br />
+Fax: +49 (228) 73-4382 <br />
+Email: <a href=\"mailto:martina@iai.uni-bonn.de\">martina@iai.uni-bonn.de</a><br />
+Office: A206
+</td>
+<td>At **Fraunhofer IAIS**:<br />
+<a href=\"http://www.iais.fraunhofer.de/886.html\">Daniela Börner</a><br />
+Phone: +49 (2241) 14-3448<br />
+Fax: +49 (2241) 14-43448<br />
+Email: <a href=\"mailto:daniela.boerner@iais.fraunhofer.de\">daniela.boerner@iais.fraunhofer.de</a><br />
+Office:
+</td>
+</tr></table>
+For press inquiries regarding the projects I'm involved you can also contact Fraunhofer IAIS PR officer <a href=\"http://www.iais.fraunhofer.de/berkler.html\">Katrin Berkler</a>.
+
+Me Elsewhere
+==================
+
+<ul>
+<li>Other websites: <a href=\"http://www.iais.fraunhofer.de/auer.html\">Fraunhofer IAIS</a> and former websites: <a href=\"http://www.informatik.uni-leipzig.de/~auer/\">Uni Leipzig</a>
+
+<li>Bibliographic databases: <a href='http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/a/Auer:S=ouml=ren.html'>DBLP</a>, <a href='http://academic.research.microsoft.com/Author/3535385.aspx'>Microsoft Academic Search</a>, <a href='http://scholar.google.com/citations?user=2cpal78AAAAJ'>Google Scholar</a>
+</li>
+
+<li>Social Networks: <a href=\"https://www.researchgate.net/profile/Soeren_Auer\">ResearchGate</a>, <a href='http://www.linkedin.com/in/soerenauer' rel='nofollow'>LinkedIn</a>, <a href='http://www.xing.com/profile/Soeren_Auer'>XING</a>, <a href=\"https://twitter.com/SoerenAuer\">Twitter</a>, <a href='http://www.facebook.com/soren.auer'>Facebook</a>
+</li>
+
+<li>Content repositories: <a href='http://videolectures.net/soren_auer/'>Videolectures</a>, <a href='http://www.slideshare.net/soeren1611'>Slideshare</a>, <a href=\"https://github.com/soeren1611\">GitHub</a>, <a href='http://sourceforge.net/users/soerenauer'>Sourceforge</a>
+</li></ul>"""^^sysont:Markdown ;
+                  sioc:feed <http://enterpriseinformationsystems.wordpress.com/feed/> ;
+                  site:templateOption "minimal" ;
+                  ov:businessCard <http://eis.iai.uni-bonn.de/vCard/Bonn> ;
+                  skos:hiddenLabel "SoerenAuer" ;
+                  foaf:currentProject projects:iRap, projects:LiDaKrA, projects:VoCol ;
+                  foaf:depiction <http://eis.iai.uni-bonn.de/upload/Soeren_Auer.jpg> ;
+                  foaf:mbox <mailto:auer@cs.uni-bonn.de> ;
+                  foaf:phone <tel:+49-228-73-7816> ;
+                  foaf:familyName "Auer" ;
+                  eis:publicationTag "auer" ;
+                  eis:room """A117, University of Bonn,
+Computer Science/EIS,
+Römerstr. 164,
+53117 Bonn, Germany<br />
+Room B3-219, Fraunhofer IAIS,
+Schloss Birlinghoven,
+53757 Sankt Augustin""" ;
+                  <schema:location> "Römerstr. 164" ;
+                  <site:content> "Test" .
+
+people:SaeedehShekarpour a foaf:Person ;
+                         rdfs:label "Dr. Saeedeh Shekarpour" ;
+                         rdfs:seeAlso <https://www.linkedin.com/nhome/> ;
+                         skos:prefLabel "Dr. Saeedeh Shekarpour" ;
+                         foaf:name "Saeedeh Shekarpour" ;
+                         dcterms:description """<H1> Research Area </H1>
+
+I am interested in pursuing advanced research in the following fields:
+
+- Question Answering
+- Semantic Search
+- Semantic Web
+- Information Retrieval
+- Statistical Methods
+- Web Mining
+
+<H1> Selected Talks </H1>
+- <b>IBM Research Center</b> (Watson project-DeepQA), New York, USA, December 2013.
+- <b>World Wide Web Conference</b> (WWW2013), Rio de Janeiro, Brazil, May 2013.
+- <b>Joint International Semantic Technology Conference</b> (JIST2012), Nara, Japan, December 2012.
+- <b>International Semantic Web Conference</b> (ISWC2011), Bonn, Germany, October 2011.
+- <b>Web Intelligence Conference</b> (WI2011), Lyon, France, August 2011.
+
+You can find some of my slides <a href=\"http://www.slideshare.net/shekarpour\"> here </a>.
+
+<H1>Publications </H1>
+You can find the list of my publications on:
+- <b><a href=\"http://dblp.uni-trier.de/pers/hd/s/Shekarpour:Saeedeh\">dblp </a></b>
+- <b><a href=\"https://scholar.google.de/citations?user=Q1j-Kv4AAAAJ&hl=en\">Google Scholar</a> </b>
+- <b><a href=\"https://www.researchgate.net/profile/Saeedeh_Shekarpour2\">Research Gate </a></b>
+
+<H1> Education </H1>
+- PhD.  Institute for Applied Computer Science at Bonn University, Bonn, Germany.
+- PhD. AKSW research group, Institute of Computer Science(IfI) of Leipzig University, Germany.
+- M.Sc. in Computer Engineering(Software), Department of Computer Science and Engineering, School of Engineering, Shiraz University, Shiraz, Iran.
+- B.Sc. in Computer Engineering(Software), Department of Electronic and Computer Engineering, Shahid Beheshti University, Tehran, Iran."""^^sysont:Markdown ;
+                         site:templateOption "minimal" ;
+                         skos:hiddenLabel "SaeedehShekarpour" ;
+                         foaf:currentProject projects:SINA, projects:WDAqua_ITN ;
+                         foaf:depiction <https://dl.dropboxusercontent.com/u/28799199/meriva.jpg> ;
+                         foaf:mbox <mailto:shekarpour*at*uni-bonn.de> ;
+                         foaf:phone <tel:+49-228-73-4697> ;
+                         foaf:familyName "Shekarpour" ;
+                         eis:publicationTag "shekarpour" ;
+                         eis:room "A110a, University of Bonn, Computer Science/EIS, Römerstr. 164, 53117 Bonn, Germany" .
+
+people:JyunYao_Huang a foaf:Person ;
+                     rdfs:label "Jyun-Yao Huang" ;
+                     skos:prefLabel "Jyun-Yao Huang" ;
+                     foaf:name "Jyun-Yao Huang" ;
+                     foaf:homepage <http://blog.allenworkspace.net> ;
+                     foaf:currentProject projects:OpenAIRE2020 ;
+                     foaf:depiction <http://www.allenworkspace.net/Profile.jpg> ;
+                     foaf:mbox <mailto:allen501pc@gmail.com> ;
+                     foaf:familyName "Huang" ;
+                     eis:room "A110a" .
+
+people:Goekhan_Coskun a foaf:Person ;
+                      rdfs:label "Dr. Gökhan Coskun" ;
+                      skos:prefLabel "Dr. Gökhan Coskun" ;
+                      foaf:name "Gökhan Coskun" ;
+                      foaf:homepage <http://www.coskun.org/gokhan> ;
+                      foaf:depiction <https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/1/000/106/324/2a24fed.jpg> ;
+                      foaf:mbox <mailto:coskun@iai.uni-bonn.de> .
+
+people:Steffen_Lohmann a foaf:Person ;
+                       rdfs:label "Dr. Steffen Lohmann" ;
+                       rdfs:seeAlso <http://steffen-lohmann.de/> ;
+                       owl:sameAs <http://steffen-lohmann.de/> ;
+                       skos:prefLabel "Dr. Steffen Lohmann" ;
+                       foaf:name "Steffen Lohmann" ;
+                       foaf:homepage <http://steffen-lohmann.de/> ;
+                       site:templateOption "minimal" ;
+                       skos:hiddenLabel "Steffen Lohmann" ;
+                       foaf:currentProject projects:SlideWiki ;
+                       foaf:depiction <http://www.vis.uni-stuttgart.de/~lohmansn/steffen.png> ;
+                       foaf:mbox <mailto:steffen.lohmann@iais.fraunhofer.de> ;
+                       foaf:phone <tel:+492241143021> ;
+                       foaf:familyName "Lohmann" ;
+                       eis:publicationTag "lohmann" ;
+                       eis:room "C1-203, Fraunhofer IAIS, Schloss Birlinghoven, 53757 Sankt Augustin" .
+
+people:Irlan a foaf:Person ;
+             rdfs:label "Irlan Grangel-González" ;
+             rdfs:seeAlso <https://de.linkedin.com/pub/irlán-grangel-gonzález/39/661/517> ;
+             skos:prefLabel "Irlan Grangel-González" ;
+             foaf:name "Irlan Grangel-González" ;
+             dcterms:description """<H1> Research Interest </H1>
+
+I am interested in pursuing advanced research in the following fields:
+
+Industry 4.0 </br>
+Linked Data Integration </br>
+Semantic Web </br>
+Collaborative Vocabulary Engineering </br>
+Statistical Methods </br>"""^^sysont:Markdown ;
+             foaf:currentProject projects:LUCID ;
+             foaf:depiction <https://lh4.googleusercontent.com/-kUk1n0yC4z4/VO3W4PHPWVI/AAAAAAAAAOA/UkMTUXvgwj4/s520-no/mine.jpg> ;
+             foaf:mbox <mailto:grangel@iai.uni-bonn.de> ;
+             foaf:familyName "Grangel-González" .
+
+people:DietlandZuehlke a foaf:Person ;
+                       rdfs:label "Dr. Dietlind Zühlke" ;
+                       foaf:depiction <https://media.licdn.com/mpr/mpr/shrink_200_200/p/1/005/08e/1bf/02d4dd7.jpg> ;
+                       foaf:mbox <mailto:dietlind.zuehlke@iais.fraunhofer.de> ;
+                       foaf:familyName "Zühlke" .
+
+people:SidraFaisal a foaf:Person ;
+                   rdfs:label "Sidra Faisal" ;
+                   foaf:currentProject projects:iRap ;
+                   foaf:familyName "Faisal" .
+
+people:StefanLuettringhausKappel a foaf:Person ;
+                                 rdfs:label "Dr. Stefan Lüttringhaus-Kappel" ;
+                                 skos:prefLabel "Dr. Stefan Lüttringhaus-Kappel" ;
+                                 foaf:name "Stefan Lüttringhaus-Kappel" ;
+                                 foaf:mbox <mailto:stefan@iai.uni-bonn.de> ;
+                                 foaf:phone <tel:+49-(228)-73-4536> ;
+                                 foaf:familyName "Lüttringhaus-Kappel" ;
+                                 eis:room "A209" .
+
+people:NiklasPetersen a foaf:Person ;
+                      skos:prefLabel "Niklas Petersen" ;
+                      foaf:name "Niklas Petersen" ;
+                      dcterms:description """
+Research and Technology Interests
+==================
+<ul>
+<li>Semantic Web Tools</li>
+<li>Ontology Engineering</li>
+<li>Open Transport</li>
+</ul>"""^^sysont:Markdown ;
+                      skos:hiddenLabel "NiklasPetersen" ;
+                      foaf:currentProject projects:VoCol ;
+                      foaf:depiction <https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAADyAAAAJDNiYmM2M2NjLTFhZTItNDAxMi05N2NiLWU5ZjRjZTExZTJhZA.jpg> ;
+                      foaf:mbox <mailto:petersen*at*cs.uni-bonn.de> ;
+                      foaf:familyName "Petersen" ;
+                      eis:room "A118" .
+
+people:JeremyDebattista a foaf:Person ;
+                        skos:prefLabel "Jeremy Debattista" ;
+                        foaf:name "Jeremy Debattista" ;
+                        site:templateOption "minimal" ;
+                        foaf:currentProject projects:Diachron ;
+                        foaf:depiction <https://media.licdn.com/media/p/2/000/0de/2b9/2d30505.jpg> ;
+                        foaf:mbox <mailto:jeremy.debattista@iais-extern.fraunhofer.de>, <mailto:debattist@informatik.uni-bonn.de> ;
+                        foaf:familyName "Debattista" ;
+                        eis:publicationTag "debattista" ;
+                        eis:room "A110a" .
+
+people:Matthew_English a foaf:Person ;
+                       rdfs:label "Matthew English" ;
+                       skos:prefLabel "Matthew English" ;
+                       foaf:name "Matthew English" ;
+                       foaf:currentProject projects:ODINE ;
+                       foaf:depiction <http://eis.iai.uni-bonn.de/upload/thumbnails/matthew.jpg> .
+
+people:Fahrettin_Goekgoez a foaf:Person ;
+                          rdfs:label "Fahrettin Gökgöz" ;
+                          skos:prefLabel "Fahrettin Gökgöz" ;
+                          foaf:name "Fahrettin Gökgöz" ;
+                          foaf:currentProject projects:OpenBudgets ;
+                          foaf:depiction <https://media.licdn.com/media/p/1/005/037/061/3954c27.jpg> .
+
+people:Ashwini_Jaya_Kumar a foaf:Person ;
+                          rdfs:label "Ashwini Jaya Kumar" ;
+                          foaf:depiction <https://media.licdn.com/media/p/2/005/0b0/208/29f9ed5.jpg> .
+
+people:Michael_Galkin a foaf:Person ;
+                      rdfs:label "Michael Galkin" ;
+                      skos:prefLabel "Michael Galkin" ;
+                      foaf:name "Michael" ;
+                      foaf:currentProject projects:Linda, projects:LinkDaViz ;
+                      foaf:depiction <https://lh5.googleusercontent.com/-xIRPKH7PQCo/UyYRNMKa58I/AAAAAAAAAJM/mhu6Q9HpHUo/w278-h280-p/1.jpg> ;
+                      foaf:mbox <mailto:galkin@eis.iai.uni-bonn.de> ;
+                      foaf:familyName "Galkin" .
+
+people:Elisa_Margareth_Sibarani a foaf:Person ;
+                                rdfs:label "Elisa Margareth Sibarani" ;
+                                foaf:name "Elisa Margareth Sibarani" ;
+                                foaf:currentProject projects:EDSA ;
+                                foaf:depiction <https://media.licdn.com/media/p/8/005/0b4/145/0bc9834.jpg> ;
+                                foaf:mbox <mailto:sibarani@iai.uni-bonn.de>, <mailto:elisamargareth.sibarani@gmail.com> ;
+                                foaf:familyName "Sibarani" ;
+                                eis:room "A110, University of Bonn, Computer Science/EIS, Römerstr. 164, 53117 Bonn, Germany" ;
+                                <schema:location> "University of Bonn, Computer Science/EIS, Römerstr. 164, 53117 Bonn, Germany" .
+
+people:Harsh_Thakkar a foaf:Person ;
+                     rdfs:label "Harsh Thakkar" ;
+                     skos:prefLabel "Harsh Thakkar" ;
+                     foaf:name "Thakkar" ;
+                     dcterms:description """About Me:
+==================
+
+I am a full-time Researcher in the Informatik III department of University of Bonn, Germany.  My current research interests are aligned with the EU funded project **WDAqua** which include _Quality assessment of open datasets for Question Answering_ and _Information retrieval_.
+
+ I completed my Post-graduation from National Institute of  Technology Surat [2013].  In my masters thesis I worked on \"Sentiment analysis for twitter using hybrid naive bayes\". I completed graduated from L. D. College of Engineering, Ahmedabad in Computer Engineering discipline [2011].
+
+[Google scholar page](scholar.google.co.in/citations?user=Rq0eahkAAAAJ&hl=en \"Google Scholar page\")
+
+You can find more information on my [personal webspace](http://harshthakkar.in \"webspace\") """^^sysont:Markdown, """About Me:
+==================
+
+I am a full-time Researcher in the Informatik III department of University of Bonn, Germany.  My current research interests are aligned with the EU funded project **WDAqua** which include _Quality assessment of open datasets for Question Answering_ and _Information retrieval_.
+
+ I completed my Post-graduation from National Institute of  Technology Surat [2013].  My masters thesis titled \"Sentiment analysis for twitter using hybrid naive bayes\". I completed graduation from L. D. College of Engineering, Ahmedabad in Computer Engineering discipline [2011].
+
+[Google scholar page](scholar.google.co.in/citations?user=Rq0eahkAAAAJ&hl=en \"Google Scholar page\")
+
+You can find more information on my [personal webspace](http://harshthakkar.in \"webspace\") """^^sysont:Markdown ;
+                     foaf:homepage "http://harshthakkar.in/" ;
+                     foaf:currentProject projects:WDAqua_ITN ;
+                     foaf:depiction <https://lh3.googleusercontent.com/-p5SC5kivSWo/Uos1z_hLgzI/AAAAAAAABUw/cHq2Z18pRdw/w140-h139-p/Its%2BMe.jpg> ;
+                     foaf:mbox <mailto:hthakkar@uni-bonn.de> ;
+                     foaf:phone <tel:+49-151-45501359> ;
+                     eis:room "A110, University of Bonn, Computer Science/EIS, Römerstr. 164, 53117 Bonn, Germany" .
+
+people:SimonScerri a foaf:Person ;
+                   rdfs:seeAlso <https://www.linkedin.com/profile/view?id=14366104&trk=nav_responsive_tab_profile> ;
+                   owl:sameAs <https://www.researchgate.net/profile/Simon_Scerri?ev=hdr_xprf> ;
+                   skos:prefLabel "Dr. Simon Scerri" ;
+                   foaf:name "Simon Scerri" ;
+                   foaf:currentProject projects:iRap, projects:EDSA, projects:BigDataEurope ;
+                   foaf:depiction <https://dl.dropboxusercontent.com/u/53345423/profile2_small.png> ;
+                   foaf:mbox <mailto:scerri@iai.uni-bonn.de> ;
+                   foaf:phone <tel:+492241143454> ;
+                   foaf:familyName "Scerri" ;
+                   eis:room "A118" .
+
+people:FabrizioOrlandi a foaf:Person ;
+                       rdfs:label "Fabrizio" ;
+                       rdfs:seeAlso <http://www.deri.ie/user/385/foaf.xml> ;
+                       owl:sameAs <http://www.deri.ie/users/fabrizio-orlandi> ;
+                       skos:prefLabel "Dr. Fabrizio Orlandi" ;
+                       foaf:name "Fabrizio Orlandi" ;
+                       foaf:currentProject projects:ExConQuer, projects:Linda, projects:iRap, projects:WDAqua_ITN, projects:LinkDaViz, projects:ODINE ;
+                       foaf:depiction <https://dl.dropboxusercontent.com/u/1490985/profile2013.png> ;
+                       foaf:mbox <mailto:orlandi@iai.uni-bonn.de> ;
+                       foaf:phone <tel:+49228734504> ;
+                       foaf:familyName "Orlandi" ;
+                       eis:room "A119" .
+
+people:NataljaFriesen a foaf:Person ;
+                      rdfs:label "Natalja Friesen" ;
+                      skos:prefLabel "Natalja Friesen" ;
+                      foaf:currentProject people:Diachron ;
+                      foaf:mbox <mailto:natalja.friesen@iais-extern.fraunhofer.de>, <mailto:friesenn@informatik.uni-bonn.de> ;
+                      foaf:phone <tel:02241-14-2788> ;
+                      foaf:familyName "Friesen" ;
+                      eis:room "A118" .
+
+people:KlaudiaThellmann a foaf:Person ;
+                        skos:prefLabel "Klaudia Thellmann" ;
+                        foaf:name "Klaudia Thellmann" ;
+                        site:templateOption "extended" ;
+                        foaf:currentProject projects:Linda ;
+                        foaf:depiction <https://www.dropbox.com/s/mmum3i4ksvqe2jb/ScanImage002.png?dl=1> ;
+                        foaf:mbox <mailto:klaudia.thellmann@iais.fraunhofer.de> ;
+                        foaf:phone <tel:+49-(0)-2241-14-2451> ;
+                        foaf:familyName "Thellmann" ;
+                        eis:room """B3-212 Fraunhofer IAIS/UBONN
+Schloss Birlinghoven
+53754 Sankt Augustin, Germany
+""" .
+
+people:SaharVahdati a foaf:Person ;
+                    rdfs:label "M.Sc" ;
+                    rdfs:seeAlso <http://www.idb.uni-bonn.de/team/sahar-vahdati> ;
+                    skos:prefLabel "Sahar Vahdati" ;
+                    foaf:name "Sahar Vahdati" ;
+                    site:templateOption "minimal" ;
+                    foaf:currentProject projects:OpenAIRE2020, projects:OSCOSS, projects:OpenCourseWare_observatory ;
+                    foaf:depiction <https://lh6.googleusercontent.com/-1aYLlJkN9Gk/AAAAAAAAAAI/AAAAAAAAAB4/TpwtSZMguBk/photo.jpg> ;
+                    foaf:mbox <mailto:s6savahd@gmail.com> ;
+                    foaf:phone <tel:+49228734533> ;
+                    foaf:familyName "Vahdati" ;
+                    eis:publicationTag "svahdati" ;
+                    eis:room "A210" .
+
+people:Denis_Lukovnikov a foaf:Person ;
+                        rdfs:label "Denis Lukovnikov" ;
+                        skos:prefLabel "Denis Lukovnikov" ;
+                        foaf:name "Denis Lukovnikov" ;
+                        foaf:currentProject projects:WDAqua_ITN ;
+                        foaf:depiction <https://dl.dropboxusercontent.com/u/25616277/cineme2mini.gif> .

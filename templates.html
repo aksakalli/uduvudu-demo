@@ -1,0 +1,19 @@
+<!--
+# Visualizer Tempaltes
+-->
+<script id="title" type="text/uduvudu-template">
+  <h1>
+    <%-title.u%>
+  </h1>
+</script>
+
+<script id="img" type="text/uduvudu-template">
+  <img src="<%-img_url.u%>" alt="Profile photo" class="img-rounded img-responsive">
+</script>
+
+
+<script id="markdown" type="text/uduvudu-template">
+  <div>
+    <% print(marked(markdown.u)) %>
+  </div>
+</script>

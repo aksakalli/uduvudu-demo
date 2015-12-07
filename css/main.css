@@ -1,0 +1,35 @@
+/* Main style file
+-------------------------------------------------- */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 62px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 62px;
+  background-color: #f5f5f5;
+}
+.container {
+  width: auto;
+  max-width: 820px;
+  padding: 0 15px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+.typeahead {
+  /* bootstrap3-typehead */
+  z-index: 1051;
+}
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px;
+}
