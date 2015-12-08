@@ -1,4 +1,4 @@
-$('#username-search').typeahead({
+$('#identifier-search').typeahead({
   source: people,
   updater: function(selected) {
     document.location = '#/' + selected;
@@ -17,18 +17,18 @@ function hashUrlHandler() {
   if (location.hash) {
     var identifier = location.hash.slice(2);
     loadPerson(identifier);
-    $('#username-search').val(identifier);
+    $('#identifier-search').val(identifier);
     document.title = identifier + ' | Uduvudu Demo';
   } else {
 
   }
 }
 
-function loadPerson(username) {
+function loadPerson(identifier) {
   //show loading animation
-  $('#main').html('<i class="glyphicon glyphicon-refresh glyphicon-spin"></i>');
+  $('#main').html('<p><i class="glyphicon glyphicon-refresh glyphicon-spin"></i></p>');
 
-  var resource = 'http://eis.iai.uni-bonn.de/' + username;
+  var resource = 'http://eis.iai.uni-bonn.de/' + identifier;
   var source = 'people.n3';
 
   var store = new rdf.LdpStore();
@@ -47,7 +47,7 @@ function loadPerson(username) {
         $('#main').html(out);
       });
     } else {
-      $('#main').html('<div class="alert alert-warning" role="alert">Error: ' + error + '</div>');
+      $('#main').html('<div class="alert alert-error" role="alert">Error: ' + error + '</div>');
     };
   });
 }
