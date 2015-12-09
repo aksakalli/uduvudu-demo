@@ -1,6 +1,6 @@
 # uduvudu-demo
 
-[Uduvudu](https://github.com/uduvudu/uduvudu) is a graph-aware and adaptive UI Engine for Linked Data. This is a demo project to get into Uduvudu. It renders stuff information of [EIS Team](http://eis.iai.uni-bonn.de/Team.html). It also demonstrates `linkMatcher`. People has projects as another resource property. Link matcher is used in order to resolve another resource as matcher object.
+[Uduvudu](https://github.com/uduvudu/uduvudu) is a graph-aware and adaptive UI Engine for Linked Data. This is a demo project to get into Uduvudu. It renders information of [EIS Team](http://eis.iai.uni-bonn.de/Team.html) members. It also demonstrates `linkMatcher`. People has projects as another resource property. Link matcher is used in order to resolve another resource as matcher object.
 
 [Demo](http://aksakalli.github.io/uduvudu-demo/)
 
